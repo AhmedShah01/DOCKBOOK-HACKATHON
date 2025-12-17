@@ -123,7 +123,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My AI Book. Built with Docusaurus By Ahmed Shah.`,
+      copyright: `Copyright © ${new Date().getFullYear()} My AI Book. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.nightOwl,
