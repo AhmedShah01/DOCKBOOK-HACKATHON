@@ -16,7 +16,7 @@ const config: Config = {
   url: 'https://your-docusaurus-site.example.com',
   baseUrl: '/',
 
-  organizationName: 'facebook',
+  organizationName: 'facebook', 
   projectName: 'docusaurus',
 
   onBrokenLinks: 'throw',
