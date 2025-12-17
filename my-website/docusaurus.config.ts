@@ -55,7 +55,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/ai-social-card.jpg',
+  
     colorMode: {
       respectPrefersColorScheme: true,
     },
