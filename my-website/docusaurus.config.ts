@@ -64,7 +64,7 @@ const config: Config = {
       title: '',
       logo: {
         alt: 'My AI Book ',
-        
+          image: 'img/ai-social-card.jpg',
       },
       items: [
         {
