@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'My AI Book',
   tagline: 'Learn, Build, and Master Artificial Intelligence',
-  favicon: 'img/favicon.ico',
+  
 
   future: {
     v4: true,
@@ -61,11 +61,9 @@ const config: Config = {
 
     navbar: {
       title: 'My AI Book',
-      logo: {
-        alt: 'My AI Book Logo',
-        src: 'img/LOGO.png',
-        width: 40,
-        height: 40,
+     
+       
+        
       },
       items: [
         {
