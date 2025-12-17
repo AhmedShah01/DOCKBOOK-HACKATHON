@@ -55,6 +55,7 @@ const config: Config = {
   ],
 
   themeConfig: {
+      image: 'img/ai-social-card.jpg',
   
     colorMode: {
       respectPrefersColorScheme: true,
@@ -63,7 +64,7 @@ const config: Config = {
       title: '',
       logo: {
         alt: 'My AI Book ',
-        src: 'img/LOGO.png',
+        
       },
       items: [
         {
