@@ -14,7 +14,7 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(238, 1, 1, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,4 +27,25 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #1a60bc 0%,
+    #b5df41 50%,
+    #eef0f0 100%
+  );
+}
+
+.hero .button--primary {
+  background: transparent;
+  color: #000;
+  border: 2px solid #f80000;
+  box-shadow: none;
+  font-weight: 600;
+}
+
+.hero .button--primary:hover {
+  background: rgba(175, 18, 18, 0.08);
 }
