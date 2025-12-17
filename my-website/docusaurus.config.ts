@@ -63,7 +63,7 @@ const config: Config = {
       title: '',
       logo: {
         alt: 'My AI Book ',
-        
+        src: 'img/LOGO.png',
       },
       items: [
         {
