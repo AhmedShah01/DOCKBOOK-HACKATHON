@@ -1,8 +1,8 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+// This runs in Node.js - Do not use browser APIs here
 
 const config: Config = {
   title: 'My AI Book',
@@ -13,11 +13,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  url: 'https://ahmedshah01.github.io',
+  baseUrl: '/my-ai-book/',
 
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  organizationName: 'AhmedShah01',
+  projectName: 'my-ai-book',
 
   onBrokenLinks: 'throw',
 
@@ -32,8 +32,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/AhmedShah01/my-ai-book/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -41,8 +40,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/AhmedShah01/my-ai-book/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -56,14 +54,18 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/ai-social-card.jpg',
+
     colorMode: {
       respectPrefersColorScheme: true,
     },
+
     navbar: {
-      title: '',
+      title: 'My AI Book',
       logo: {
-        alt: 'My AI Book ',
+        alt: 'My AI Book Logo',
         src: 'img/LOGO.png',
+        width: 40,
+        height: 40,
       },
       items: [
         {
@@ -72,7 +74,7 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/AhmedShah01',
           label: 'GitHub',
@@ -80,6 +82,7 @@ const config: Config = {
         },
       ],
     },
+
     footer: {
       style: 'dark',
       links: [
@@ -123,11 +126,13 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My AI Book. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} My AI Book.`,
     },
+
     prism: {
       theme: prismThemes.nightOwl,
       darkTheme: prismThemes.vsDark,
+      additionalLanguages: ['python', 'bash', 'json', 'yaml'],
     },
   } satisfies Preset.ThemeConfig,
 };
